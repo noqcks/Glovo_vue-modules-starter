@@ -8,6 +8,6 @@ export class AboutModule implements VueModule {
   constructor(private router: Router) {}
 
   install(Vue: typeof _Vue) {
-    this.router.addRoutes(aboutRoutes)
+    aboutRoutes.forEach(route => this.router.addRoute(route))
   }
 }
