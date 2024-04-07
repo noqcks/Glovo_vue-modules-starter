@@ -1,6 +1,6 @@
 import { Vue as _Vue } from 'vue/types/vue'
 import { VueModule } from 'vue-modules'
-import VueRouter from 'vue-router'
+import { Router } from 'vue-router'
 import { homeRoutes } from './router/home-routes'
 import { Store } from 'vuex'
 import { homeStore } from './store'
