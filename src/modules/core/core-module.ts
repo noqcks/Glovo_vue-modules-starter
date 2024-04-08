@@ -11,7 +11,7 @@ export class CoreModule implements VueModule {
     new Vue({
       router: this.router,
       store: this.store,
-      render: h => h(App)
+      render: (h: any) => h(App)
     }).$mount('#app')
   }
 }
