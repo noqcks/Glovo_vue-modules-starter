@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import { RouterModule } from '@/modules/router'
 import { StoreModule } from '@/modules/store'
 import { CoreModule } from '@/modules/core'
@@ -6,7 +6,7 @@ import { HomeModule } from '@/modules/home'
 import { AboutModule } from '@/modules/about'
 
 function bootstrap() {
-  Vue.config.productionTip = false
+  // Vue.config.productionTip = false
   const routerModule = new RouterModule()
   routerModule.install(Vue)
 
